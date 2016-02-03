@@ -1,0 +1,45 @@
+body {
+  font-family: "Helvetica";
+}
+
+div.content {
+  margin: 10% 0% 0% 20%;
+/*  width: 100%;*/
+}
+
+div.headline {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+div.mainlink {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #900020;
+  margin: 1% 0 0 1%;
+}
+
+div.mainlink a:link,
+div.mainlink a:active,
+div.mainlink a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+div.mainlink a:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+
+div.subtitle {
+  color: #808080;
+  font-size: 0.5em;
+  font-weight: normal;
+  margin: 1% 0 0 1%;
+}
+
+div.info {
+  color: #808080;
+  font-weight: normal;
+  margin: 1% 0 0 1%;
+}
