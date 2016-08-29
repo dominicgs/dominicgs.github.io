@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<title>Is Dominic Awake?</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.5/moment-timezone-with-data-2010-2020.min.js"></script>
+		<script type="text/javascript">
+			function display_status(time) {
+			  var headline = "";
+			  var detail = "";
+			  var hour = time.hour();
+			  var day = time.day();
+			  if(hour < 7) {
+			    headline = "No";
+			    detail = "asleep";
+			  } else if (hour < 9) {
+			    headline = "Maybe";
+			    detail = "best not to call him";
+			  } else if (hour < 18) {
+			    if(day < 6 && day > 0) {
+			      headline = "Yes";
+			      detail = "working";
+			    } else {
+			      headline = "Yes";
+			      detail = "but it's the weekend";
+			    }
+			  } else if (hour < 23) {
+			    if(day == 0 || day == 6 ) {
+			      headline = "Yes";
+			      detail = "possibly in a pub";
+			    } else {
+			      headline = "Yes";
+			      detail = "but it's evening";
+			    }
+			  } else {
+			    headline = "No";
+			    detail = "asleep";
+			  }
+			  detail = detail + ' - ' + time.format("h:ma");
+			  document.getElementById('headline').innerHTML = headline;
+			  document.getElementById('info').innerHTML = detail;
+			}
+
+			function set_time(response) {
+			  var meta = response.meta;
+			  var data = response.data;
+			  var tz_regex = /TZ:\s*(.*)/g;
+			  var match = tz_regex.exec(data['bio']);
+			  var timezone = match[1];
+			  console.log(timezone);
+			  var dominic_time = moment().tz(timezone);
+			  console.log(dominic_time);
+			  display_status(dominic_time);
+			}
+
+			var script = document.createElement('script');
+			script.src = 'https://api.github.com/users/dominicgs?callback=set_time';
+			document.getElementsByTagName('head')[0].appendChild(script);
+		</script>
+	</head>
+	<body>
+		<div class="content">
+			<div id="headline" class="headline"></div>
+			<div id="info" class="info"></div>
+			</div>
+		</div>
+	</body>
+</html>
