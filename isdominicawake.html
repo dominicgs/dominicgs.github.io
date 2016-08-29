@@ -46,6 +46,11 @@
 			function set_time(response) {
 			  var meta = response.meta;
 			  var data = response.data;
+			  if(meta['status'] != 200) {
+			    document.getElementById('headline').innerHTML = "Error communicating with api.github.com";
+			    document.getElementById('info').innerHTML = data['message'];
+			    return;
+			  }
 			  var tz_regex = /TZ:\s*(.*)/g;
 			  var match = tz_regex.exec(data['bio']);
 			  var timezone = match[1];
