@@ -1,0 +1,189 @@
+Presenter Information
+
+Primary Speaker Name*: Dominic Spill
+Has the speaker(s) spoken at a previous DEF CON? Yes, DEF CON 17 (2009)
+Social media: @dominicgs
+
+Additional Speakers' name(s)* & titles: Jared Boone
+Has the speaker(s) spoken at a previous DEF CON? No
+Social media: @sharebrained
+
+
+Presentation Information
+
+Presentation Title: The NSA Playset: USB Tools
+Is there a demonstration? Yes
+Are you releasing a new tool? Yes, and extensions to existing tools
+Are you releasing a new exploit? No
+Is there audience participation? No
+Length of presentation? 45 minutes
+
+Are you currently submitting this topic to any other conferences held prior
+to DEF CON 22? No
+Are you submitting to Black Hat USA? No
+Has this presentation been given or accepted to any other venue or
+conference? No
+Is your ability or willingness to speak predicated on your talk being
+accepted at Black Hat USA? No
+
+Scheduling
+
+Is there a specific day or time by which you must present?
+No, but there may be a follow-up/related Wireless Village talk, so earlier
+in the weekend would be better.
+
+Equipment needs & special requests (DEF CON will provide 1 LCD projector
+feed, 2 screens, microphones, wired and/or wireless Internet)
+
+Will you require more than 1 LCD projector feed? No
+Will you require a white board? No
+Are there any other special equipment needs that you will require? No
+
+Speaker Bio(s):
+Dominic Spill has been building packet sniffers and researching wireless
+security since 2007. He has been the lead developer for Ubertooth for the
+past two years while also working on Daisho, FCC.io and now USBProxy.
+
+Jared Boone in open-source hardware hacker. Besides his own art, music, and
+software radio projects, he's a contributor to the Ubertooth, HackRF, and
+Daisho projects.
+
+Abstract:
+USB is the most widely used technology for connecting consumer devices, so
+it is no surprise that the NSA ANT catalog featured tools to target USB
+hosts. Cheap, low level USB hacking has only been available to our community
+since FaceDancer emerged a few years ago. Unfortunately existing tools have
+limits such as low speed and restricted number of endpoints which do not
+apply to real world devices. USBProxy can be combined with a range of cheap
+hardware platforms to prototype new or imitate existing devices while also
+allowing us to perform man in the middle attacks between a host and a device
+at higher data rates.
+
+The next generation of open source hardware device, with support for USB 3.0
+connections is already being designed. Daisho combines off the shelf PHY ICs
+with the flexibility of an FPGA to allow us to monitor and modify packets in
+real time.
+
+
+Outline: (timings are a rough guide)
+
+1. introduction (5mins)
+  A. Introduction to the NSA Playset
+  B. Overview of USB
+   i. Basic need-to-know aspects of USB for this talk
+  C. History of USB monitoring/injection/etc
+    i. Alternative devices (commercial sniffers)
+    ii. FaceDancer - uses and limitations
+    iii. ANT catalog USB devices - COTTONMOUTH
+2. USBProxy (7.5mins)
+  A. Hardware - BeagleBone Black or other low cost platforms
+  B. USBProxy architecture
+    i. how it works
+  C. Filtering and injecting packets
+  D. Man in the middle capabilities
+3. Demonstrations (5mins)
+ A. USBProxy pass-through demo
+ B. Man in the middle demo
+4. Devices as software (5mins)
+  A. Implementing a device in software
+  B. Writing / porting a fuzzer
+5. Fuzzer demo (3mins)
+6. Future work - USBProxy (2mins)
+ A. Extensions / devices / language bindings
+7. Daisho (7.5mins)
+  A. Overview of design
+  B. Front-end targets
+    i. USB 3.0
+    ii. planned targets include: HDMI, other high speed technologies
+8. Daisho Demo (5mins)
+ A. We hope to have an early prototype to show off USB pass-through
+ B. If working in time, we would like to demonstrate USB 3.0 monitoring
+9. Defense (2.5mins)
+ A. How can we detect sniffers, MitM attacks, implants
+ B. Are there wasy to defend against them?
+10. future work - Daisho (2.5mins)
+  A. Writing packet filters for the FPGA
+  B. Integration with existing tools
+  C. USB 3.0 interface fuzzer
+
+Note:
+This is part of a series of proposed talks on The NSA Playset. Each talk
+contains content that stands alone and can be selected on individual merit,
+but all of them are based on the theme that we can build our own tools with
+capabilities similar to those known to be employed by the NSA. The authors
+of the NSA Playset series are coordinating with each other to minimize
+content overlap and maximize quality and entertainment value.
+
+
+SUBMISSION AGREEMENTS
+
+Please read and accept these terms by inserting your name where noted.
+Failure to do so will render your submission incomplete. Please read these
+carefully as some of the terms have changed. Grant of Copyright Use
+
+I warrant that the above work has not been previously published elsewhere,
+or if it has, that I have obtained permission for its publication by DEF CON
+Communications, Inc. and that I will promptly supply DEF CON Communications,
+Inc. with wording for crediting the original publication and copyright
+owner. If I am selected for presentation, I hereby give DEF CON
+Communications, Inc. permission to duplicate, record and redistribute this
+presentation, which includes, but is not limited to, the conference
+proceedings, conference CD, video, audio, and hand-outs to the conference
+attendees for educational, on-line, and all other purposes. Terms of
+Speaking Requirements
+
+1) I will submit a completed presentation, a copy of the tool(s) and/or
+code(s), and a reference to all of the tool(s), law(s), Web sites and/or
+publications referenced to at the end of my talk and as described in this
+CFP submission for publication on the conference CD by 12:00 noon PST, July
+15, 2014.
+
+2) I will submit a final Abstract and Biography for the DEF CON website and
+Printed Conference Materials by 12:00 noon PST, June 20, 2014.
+
+3) I understand if I fail to submit a completed presentation by July 15,
+2014, I may be replaced by an alternate presentation or may forfeit my
+honorarium. This decision will be made by DEF CON and I will be informed in
+writing of my status.
+
+4) I will include a detailed bibliography as either a separate document or
+included within the presentation of all resources cited and/or used in my
+presentation.
+
+5) I will complete my presentation within the time allocated to me - not
+running over, or excessively under the time allocation.
+
+6) I understand that DEF CON will provide 1 LCD projector feed, 2 screens,
+microphones, wired and/or wireless Internet. I understand that I am
+responsible for providing all other necessary equipment, including laptops
+and machines (with VGA output), to complete my presentation.
+
+7) If applicable, I will submit within 5 days of the completion of the
+conference any updated, revised or additional presentation(s) or materials
+that were used in my presentation but not included on the conference CD or
+conference proceedings. Terms of Speaking Remuneration
+
+1) I understand that I will be responsible for my own hotel and travel
+expenses.
+
+2) I understand that DEF CON will issue one $300 payment per presentation.
+
+3) I understand that I may receive payment on-site at the conference. If
+not, I must provide a valid name and postal mail address so that payment may
+be mailed. Payment will be made in form of corporate check. In some rare
+cases, you may be required to complete a W8 (Non-U.S. Citizen) or W9 (U.S.
+Citizen) before payment is issued.
+
+4) I understand that I will be paid 30 days from the end of the conference,
+after I have completed my presentation. I may choose to waive my $300
+speaking fee in exchange for 3 DEF CON Human badges.
+
+5) I understand that should my talk be determined to be unsuitable (e.g. a
+vendor or sales pitch, a talk on the keeping of goats, etc.) after I have
+presented, that I will not receive an honorarium.
+
+As detailed above,
+I, Dominic Spill, have read and agree to the Grant of Copyright Use.
+I, Dominic Spill, have read and agree to the Terms of Speaking Requirements.
+I, Dominic Spill, have read and agree to the Agreement to Terms of Speaking
+Remuneration or I will forfeit my honorarium.

@@ -1,0 +1,27 @@
+Name: Dominic Spill
+
+Country of Residence: UK
+
+Title: Bluetooth sniffing with Ubertooth
+
+Length: 45mins
+
+Abstract:
+Bluetooth traffic analysis is hard.  While 802.11 and Zigbee have promiscuous
+mode on commodity hardware, Bluetooth packet sniffing is hampered by
+pseudo-random frequency hopping between packets as well as data whitening,
+integrity and CRC checks based on unknown device state.
+
+Using entirely open source hardware and software, we are now able to calculate
+the internal state from received packet and hop frequency 1600 times per second
+to monitor the connection between arbitrary devices.
+
+Demos - finding non-discoverable devices, recovering internal device state,
+sniffing packets, Bluetooth low energy sniffing if time allows (and if I can
+find some devices).
+
+Ancestry:
+Dominic has been trying to build a promiscuous Bluetooth sniffer since 2007,
+so we can assume it's hard.  In July 2012 he took over as lead developer on
+project Ubertooth in an attempt to add features such as frequency hopping.
+This talk shows the fruits of that work.

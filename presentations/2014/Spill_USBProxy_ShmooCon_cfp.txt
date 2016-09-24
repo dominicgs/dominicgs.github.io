@@ -1,0 +1,90 @@
+== Title of Presentation ==
+
+An open and affordable USB man in the middle device
+
+== Presenter Names ==
+
+Dominic Spill
+
+== Abstract ==
+
+With the introduction of FaceDancer, there has been a surge of interest in USB
+security. USB-mitm is an open framework for the BeagleBone Black to make it 
+simpler for anyone to monitor, inject or modify data carried over a USB
+connection. While the FaceDancer will allow devices to be written on a host
+system, we are able to go further and man-in-the-middle connections to existing
+devices as well. The BeagleBone Black also enables us to operate at USB 2.0 
+Hi-Speed.
+
+== Bio ==
+
+Dominic Spill has been building Bluetooth packet sniffers since 2007; he now
+works on Ubertooth and Daisho among other communications sniffing projects.
+
+== Detailed Outline ==
+
+- Introduction (5 mins) - We're writing an open source library/framework to
+allow the BeagleBone Black to be turned in to a USB sniffer, man in the middle
+device and to spoof devices which are not physically present.
+
+- Introducton to the inner workings of USB (5 mins) - A brief and relatively
+high level introduction to the way USB connections are established and used by
+host systems and peripheral devices.
+
+- Writing devices in software (5 mins) - How your USB on-the-go android phone
+can act as both a host and a device, and how these "devices" are built in
+software.  This will include information about GadgetFS, a filesystem
+representation of a USB device that can be accessible from userspace.
+
+- Demo (5 mins) Monitoring a USB connection and modifying the data carried.
+This will most likely be a keyboard or an Ubertooth. 
+
+- Explanation of the demo (10 mins) - Show how we have used the usb-mitm code to
+monitor a connection and interfere with the packets carried, in much the same
+way a router can interfere with network connections.  This will include some
+code samples and a description of the architecture of the tools.
+
+- Demo (5 mins) Remote device / device as a service. Again, this will likely be
+an HID device or an Ubertooth.
+
+- Expanation of demo (10 mins) Having one host connect to a USB device and relay
+the packets to one or more BeagleBone Black boards over a network will allow
+some devices to be shared between hosts.  This has implications for security
+devices such as software protection dongles.
+
+- Code release (5 mins) - The framework is being developed under the GPLv3
+license and is already available to anyone who is interested
+(https://github.com/dominicgs/usb-mitm).  If accepted, this talk would be the
+first time it has been shown to an audience of security professionals.  We are
+also hopeful that it will be compatible with some of the existing FaceDancer
+tools before ShmooCon.
+
+- Questions (5 minutes)
+
+== List of other conferences ==
+
+This work has not been presented at or submitted to any other conference.
+
+== Why is this a good fit for ShmooCon ==
+
+I think that this talk would be an excellent fit for the "Build It" track as we
+are developing a framework to allow USB connections to be sniffed, injected
+and generally interfered with by a researcher using a $45 Linux system.
+Alongside projects like Daisho and FaceDancer, this will allow anyone to
+investigate the security of USB devices, while the cost of the hardware will
+also significantly lower the barrier to entry.
+
+== Previous experience ==
+
+I have presented at ShmooCon V as well as a range of other security cons,
+including DefCon, BlackHat, Kiwicon and Troopers.
+
+== Proceedings ==
+
+Yes, I would be happy to write an article on the usb-mitm framework and its uses
+in the field of security research.
+
+
+== List of facilities requested ==
+
+N/A

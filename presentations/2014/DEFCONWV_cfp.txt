@@ -1,0 +1,54 @@
+Speaker Bio(s):
+Dominic Spill has been building packet sniffers and researching wireless
+security since 2007. He has been lead developer for Ubertooth for the past two
+years while also working on Daisho, FCC.io and now USBProxy.
+
+Mike Kershaw aka Dragorn is the author of Kismet and other
+open-source wireless security tools, and is the Chief Architect at
+Blackphone.
+
+Are you a First Time Presenter? *
+Have you given a talk before?
+I have no idea how to answer this pair of questions with a single answer.
+
+Will you be releasing code?
+Yes
+
+Will there be a live demo?
+Yes
+
+Has this talk been given previously?
+No
+
+Has this talk been submitted to any other conferences?
+No
+
+Title: Driver-less wireless devices
+
+Abstract:
+Setting up wireless devices on multiple platforms for penetration tests or
+research can be a minefield of driver issues. We propose a new implementation
+using cheap, widely available hardware to present a single, unified interface
+for tools to use, no matter on which platform they run. We will also attempt to
+take advantage of special classes of device to allow driver-less operation from
+userspace on multiple platforms such as Android, Windows, and OSX.
+
+Note (not part of the abstract to be published):
+This is *very* early work, if things don't work out this could end up as a talk
+about failure and why this is not possible, but we're confident that it is
+possible. We're attempting to use Dominic's work on USBProxy with Dragorn and
+Josh Wright's work on Lorcon to use Linux 802.11 device drivers on a BeagleBone
+Black and present the device to a host with a common interface that uses a USB
+HID class to avoid driver installation. The results of this work should allow us
+to use wireless tools from userspace without permission or driver issues.
+
+Desired speaking slot length: 20 mins
+
+Special Requests?
+None
+
+Any possible scheduling conflicts?
+Dominic is submitting a talk about USBProxy to the main Defcon CFP, it would be
+nice to schedule the WV talk later than that as this follows on from it.
+If that talk is not accepted, Dominic may not be able to travel to Vegas, in
+that case Mike will give the talk solo.

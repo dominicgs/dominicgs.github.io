@@ -1,0 +1,41 @@
+Submissions must be sent via email to haxpocfp@haxpo.nl with the following details included:
+
+Name: Dominic Spill
+
+Job title: Software developer - Great Scott Gadgets
+
+Length of your talk: 30minutes - (would happily fill 60 minutes, but I don't
+want to take time from other great speakers)
+
+Talk title: Protecting USB devices with USBProxy
+
+Details:
+With the introduction of FaceDancer, there has been a surge of interest in
+USB security with some excellent USB fuzzing toolkits being made available.
+USBProxy is an open framework targeted at the BeagleBone Black to make it
+simpler for anyone to monitor, inject or modify data carried over a USB
+connection. While the FaceDancer will allow devices to be written on a host
+system, we are able to go further and man-in-the-middle connections to
+existing devices and inject packets in to a connection as well as
+prototyping devices in userspace. We chose to use the BeagleBone Black
+because it is cheap, open source hardware which is easy to obtain and allows
+us to operate at USB 2.0 Hi-Speed.
+
+Over the past few weeks I have been using our USBProxy tools to investigate
+the communication between a host system and USB mass storage devices. I have
+written filters for USB traffic that will allow a drive to be mounted and
+read as a regular drive, but will block write operations. This allows a
+drive to be read while the host believes that it is a read-only filesystem.
+There is also the possibility of allowing the host to perform write actions
+but silently dropping or logging them on proxy.
+
+These filters allow is to investigate the ways in which untrusted host
+systems interact with our USB drives while also protecting them. My
+presentation will describe how the filters work and demonstrate how they can
+be used to mislead a host about the properties of USB devices.
+
+The presentation will feature a live demonstration of the code. I will also
+discuss how this work can be applied when investigating malicious USB
+devices or low level malware that makes use of USB devices.
+
+Special requirements: None

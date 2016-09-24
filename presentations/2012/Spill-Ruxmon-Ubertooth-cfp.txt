@@ -1,0 +1,42 @@
+
+Title: Bluetooth packet sniffing using Project Ubertooth
+
+Abstract:
+Bluetooth traffic analysis is hard. Whilst other radio communications
+technologies (802.11, Zigbee) support promiscuous mode, Bluetooth dongles
+cannot monitor all traffic due to a pseudo-random frequency hopping system.
+Until recently the only way to monitor Bluetooth traffic was to use expensive
+software radio peripherals.  Project Ubertooth is an open hardware device that
+has opened up new opportunities to capture Bluetooth traffic between devices,
+even in non-discoverable mode.
+
+As part of this presentation I will demonstrate the latest frequency hopping
+functionality that allows us to follow a connection as it changes frequency
+1600 times per second and capture the packet data for analysis.  The talk will
+also explain the technical challenges that have been overcome while attempting
+to implement Bluetooth protocol analysis on affordable hardware, such as the
+obscure error correction methods that many manufacturers have chosen not to
+implement in their products.
+
+The demonstrations will include tools written to work with the Ubertooth device
+as well as integration with both Kismet and Wireshark.  Additionally some of the
+tools will also work with the GnuRadio platform and the USRP hardware, this will
+be demonstrated if time allows.
+
+
+Speaker bio:
+Dominic Spill has been investigating Bluetooth security using software radio
+since 2007. In that time he has built the first promiscuous Bluetooth packet
+sniffer based on software radio[1] and collaborated with other researchers[2]
+to produce open source Bluetooth traffic analysis tools.  He is currently
+working as a developer and security researcher in Melbourne.
+
+[1] https://www.usenix.org/conference/woot-07/bluesniff-eve-meets-alice-and-bluetooth
+[2] http://www.ossmann.com/shmoo-09/ossmann-spill-shmoo-2009.pdf
+
+
+Submissions should thoroughly outline your desired presentation subject.
+
+If you have any enquiries about submissions, or would like to make a submission, please send an e-mail to presentations@ruxcon.org.au
+
+The deadline for submissions is the 15th of July.
